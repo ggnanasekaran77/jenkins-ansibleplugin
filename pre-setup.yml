@@ -1,0 +1,7 @@
+--- # pre-setup playbook
+- hosts: localhost
+  connection: local
+  tasks:
+  - shell: "echo Hello World"
+    register: output
+  - debug: var=output
